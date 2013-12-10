@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" styleClass="null" xmlns:fx="http://javafx.com/fxml" fx:controller="mx.com.ctc.aztec.principal.UserPrincipalController">
+  <children>
+    <BorderPane maxHeight="600.0" maxWidth="800.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <GridPane id="GridPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label prefWidth="84.0" text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="userId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                  <GridPane.margin>
+                    <Insets left="50.0" right="50.0" fx:id="x1" />
+                  </GridPane.margin>
+                </TextField>
+                <PasswordField fx:id="password" prefWidth="200.0" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="1" />
+                <Label fx:id="errorMessage" prefHeight="69.99990000000253" prefWidth="407.9998779296875" text="Label" textAlignment="JUSTIFY" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                    <Insets />
+                  </GridPane.margin>
+                </Label>
+                <Button fx:id="login" mnemonicParsing="false" onKeyPressed="#processLoginKey" text="Login" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                    <Insets left="170.0" right="50.0" />
+                  </GridPane.margin>
+                </Button>
+                <ProgressBar fx:id="bar" minHeight="10.0" prefWidth="274.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                    <Insets left="50.0" right="50.0" fx:id="x1" />
+                  </GridPane.margin>
+                </ProgressBar>
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="126.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="421.0" minWidth="10.0" prefWidth="374.0" />
+              </columnConstraints>
+              <padding>
+                <Insets bottom="100.0" left="50.0" right="50.0" top="100.0" />
+              </padding>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </AnchorPane>
+      </center>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@principal.css" />
+  </stylesheets>
+</AnchorPane>

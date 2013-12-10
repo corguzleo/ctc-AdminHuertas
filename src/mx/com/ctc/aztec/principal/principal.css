@@ -1,0 +1,33 @@
+.menu-bar .label {
+    -fx-font-size: 26;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #dedede;
+
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 18;
+}
+
+.combo-box{
+    -fx-font-family: "Arial";
+    -fx-font-size: 22;
+}
+
+.text-field, .text-area {
+    -fx-font-size: 18;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    
+    /*-fx-background-color:
+    	rgb(255, 255, 255, 0.3),
+    	linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );*/
+    -fx-font-family: "Arial";
+}

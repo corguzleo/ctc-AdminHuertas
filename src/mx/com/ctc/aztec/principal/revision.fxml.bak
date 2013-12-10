@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="807.0" xmlns:fx="http://javafx.com/fxml" fx:controller="mx.com.ctc.aztec.principal.RevisionController">
+  <children>
+    <TitledPane animated="false" prefHeight="295.0" prefWidth="807.0" text="Revisión" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="802.0">
+          <children>
+            <GridPane id="GridPane" prefHeight="269.0" prefWidth="803.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <CheckBox fx:id="agallasHojas" mnemonicParsing="false" text="Agallas en hojas" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <CheckBox fx:id="amarillo" mnemonicParsing="false" text="Amarillo" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <CheckBox id="brotosDañados" fx:id="brotosDaniados" mnemonicParsing="false" text="Brotos dañados" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <CheckBox fx:id="caidaFruto" mnemonicParsing="false" text="Caida fruto" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <CheckBox fx:id="caidaHojas" mnemonicParsing="false" text="Caida hojas" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <CheckBox fx:id="caidaRamas" mnemonicParsing="false" text="Caida ramas" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <CheckBox fx:id="cortezaDaniada" mnemonicParsing="false" text="Corteza dañada" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <CheckBox fx:id="defolacion" mnemonicParsing="false" text="Defolación" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <CheckBox fx:id="floracionRetrasada" mnemonicParsing="false" text="Floración retrasada" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <CheckBox fx:id="frutoMalformado" mnemonicParsing="false" text="Fruto malformado" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                <CheckBox fx:id="granizada" mnemonicParsing="false" text="Granizada" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <CheckBox fx:id="helada" mnemonicParsing="false" text="Helada" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <CheckBox fx:id="hojaChica" mnemonicParsing="false" text="Hoja chica" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <CheckBox fx:id="hojaAmarilla" mnemonicParsing="false" text="Hojas amarillas" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <CheckBox fx:id="hojaChina" mnemonicParsing="false" text="Hojas chinas" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <CheckBox fx:id="hojaCloritica" mnemonicParsing="false" text="Hojas cloríticas" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <CheckBox fx:id="hojaManchada" mnemonicParsing="false" text="Hojas manchadas" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <CheckBox fx:id="hojaSeca" mnemonicParsing="false" text="Hojas secas" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <CheckBox fx:id="hojaVerdeAmaillento" mnemonicParsing="false" text="Hojas verde amarillento" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <CheckBox fx:id="hojaVerdeOscuro" mnemonicParsing="false" text="Hojas verde oscuro" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <CheckBox fx:id="hueco" mnemonicParsing="false" text="Hueco" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <CheckBox fx:id="huesoBarrenado" mnemonicParsing="false" text="Hueso barrenado" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <CheckBox fx:id="lesionesSol" mnemonicParsing="false" text="Lesiones por sol" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <CheckBox fx:id="manchasCorchosas" mnemonicParsing="false" text="Manchas corchosas" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <CheckBox fx:id="marcasHoja" mnemonicParsing="false" text="Marcas en hojas, frutos y/o tallos" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <CheckBox fx:id="necrosis" mnemonicParsing="false" text="Necrosis" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <CheckBox fx:id="otro" mnemonicParsing="false" text="Otro" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <CheckBox fx:id="oxidacionHojas" mnemonicParsing="false" text="Oxidación de hojas" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <CheckBox fx:id="pigmeo" mnemonicParsing="false" text="Pigmeo" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <CheckBox fx:id="pocaHoja" mnemonicParsing="false" text="Poca hoja" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                <CheckBox fx:id="pocoAmarre" mnemonicParsing="false" text="Poco amarre" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <CheckBox fx:id="pudricionFruto" mnemonicParsing="false" text="Pudrición en fruto" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <CheckBox fx:id="pudricionRadicular" mnemonicParsing="false" text="Pudrición radicular" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <CheckBox fx:id="seco" mnemonicParsing="false" text="Seco" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <CheckBox fx:id="tumores" mnemonicParsing="false" text="Tumores" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <CheckBox fx:id="cenizaVolcanica" mnemonicParsing="false" text="Ceniza volcánica" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <CheckBox fx:id="faltaAgua" mnemonicParsing="false" text="Falta de agua" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <CheckBox fx:id="incendio" mnemonicParsing="false" text="Incendio" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <CheckBox fx:id="plaga" mnemonicParsing="false" text="Plaga" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+              </columnConstraints>
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+  </children>
+</AnchorPane>

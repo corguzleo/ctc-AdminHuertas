@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" fx:controller="mx.com.ctc.aztec.principal.SalesforceController">
+  <children>
+    <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <GridPane id="GridPane" prefHeight="432.0" prefWidth="500.0">
+          <children>
+            <Label prefWidth="73.0" text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label prefWidth="109.0" text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="userId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <GridPane.margin>
+                <Insets left="50.0" right="50.0" fx:id="x1" />
+              </GridPane.margin>
+            </TextField>
+            <PasswordField fx:id="password" prefWidth="200.0" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="3" />
+            <PasswordField id="password" fx:id="token" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+              <GridPane.margin>
+                <Insets left="50.0" right="50.0" fx:id="x1" />
+              </GridPane.margin>
+            </PasswordField>
+            <ComboBox fx:id="cmbAmbiente" GridPane.columnIndex="1" GridPane.rowIndex="7">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+              <GridPane.margin>
+                <Insets left="50.0" right="50.0" fx:id="x1" />
+              </GridPane.margin>
+            </ComboBox>
+            <Button fx:id="login" mnemonicParsing="false" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="11">
+              <GridPane.margin>
+                <Insets left="150.0" right="100.0" />
+              </GridPane.margin>
+            </Button>
+            <Label text="Salesforce" GridPane.columnIndex="1" GridPane.rowIndex="0">
+              <GridPane.margin>
+                <Insets left="160.0" right="100.0" />
+              </GridPane.margin>
+            </Label>
+            <Label text="Token:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label fx:id="errorMessage" prefHeight="70.0" prefWidth="409.0" style="text-align:center;" text="Label" textAlignment="CENTER" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Label text="Ambiente:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <CheckBox fx:id="chkGuardar" mnemonicParsing="false" text="Guardar información" GridPane.columnIndex="1" GridPane.rowIndex="9">
+              <GridPane.margin>
+                <Insets left="50.0" right="50.0" fx:id="x1" />
+              </GridPane.margin>
+            </CheckBox>
+            <ProgressBar fx:id="bar" prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+          </columnConstraints>
+          <padding>
+            <Insets bottom="100.0" top="100.0" />
+          </padding>
+          <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="23.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="23.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="34.0" minHeight="8.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.0" minHeight="7.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="83.0" minHeight="6.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+          <BorderPane.margin>
+            <Insets bottom="10.0" left="150.0" right="150.0" top="10.0" />
+          </BorderPane.margin>
+        </GridPane>
+      </center>
+      <top>
+        <fx:include fx:id="menu" source="menu.fxml" maxHeight="26.0" minHeight="48.0" prefHeight="48.0" prefWidth="800.0" />
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@principal.css" />
+  </stylesheets>
+</AnchorPane>

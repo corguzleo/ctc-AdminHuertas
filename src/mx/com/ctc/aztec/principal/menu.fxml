@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="40.0" prefHeight="40.0" prefWidth="530.0" xmlns:fx="http://javafx.com/fxml" fx:controller="mx.com.ctc.aztec.principal.MenuController">
+  <children>
+    <MenuBar fx:id="menuPrincipal" maxWidth="40.0" prefHeight="40.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Principal">
+          <items>
+            <MenuItem mnemonicParsing="false" style="-fx-font-size: 22;&#10; -fx-font-family: &quot;Arial&quot;;" styleClass="null" text="Árboles" fx:id="arboles" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" style="-fx-font-size: 22;&#10; -fx-font-family: &quot;Arial&quot;;" text="Huertas" fx:id="huertas" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" style="-fx-font-size: 22; -fx-font-family: &quot;Arial&quot;;" text="Salir" fx:id="exit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Salesforce">
+          <items>
+            <MenuItem mnemonicParsing="false" style="-fx-font-size: 22;&#10; -fx-font-family: &quot;Arial&quot;;" text="Descarga de huertas" fx:id="descargaHuertas" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" style="-fx-font-size: 22;&#10; -fx-font-family: &quot;Arial&quot;;" text="Sincronizar" fx:id="sincronizar" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+  <stylesheets>
+    <URL value="@principal.css" />
+  </stylesheets>
+</AnchorPane>

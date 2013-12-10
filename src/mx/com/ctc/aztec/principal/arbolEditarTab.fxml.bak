@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" fx:controller="mx.com.ctc.aztec.principal.ArbolEditarController">
+  <children>
+    <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <TabPane prefHeight="555.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab fx:id="tabArbol" text="Árbol">
+              <content>
+                <ScrollPane id="panelScroll" fx:id="scroll" fitToWidth="true" hbarPolicy="NEVER" minHeight="-Infinity" prefHeight="400.0" prefWidth="800.0" vbarPolicy="ALWAYS">
+                  <VBox id="VBox" alignment="CENTER" minWidth="800.0" prefHeight="811.5" prefWidth="800.0" spacing="5.0">
+                    <children>
+                      <TitledPane collapsible="false" prefHeight="272.0" prefWidth="801.0" text="Árbol">
+                        <content>
+                          <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="796.0">
+                            <children>
+                              <GridPane id="GridPane" prefHeight="246.0" prefWidth="797.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                                <children>
+                                  <Label prefWidth="53.0" text="Árbol" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                  <TextField fx:id="txtArbol" disable="true" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                  <Label prefWidth="104.0" text="Latitud" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                                  <TextField fx:id="txtLatitud" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                                  <Label prefWidth="78.0" text="Huerta" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                  <TextField fx:id="txtHuerta" disable="true" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                  <Label prefWidth="78.0" text="Longitud" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                  <TextField fx:id="txtLongitud" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                  <Label prefWidth="137.0" text="Ubicacion fila" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                  <TextField fx:id="txtFila" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                  <Label prefWidth="141.0" text="Elevación" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                  <TextField fx:id="txtAltitud" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                  <Label prefWidth="157.0" text="Ubicacion columna" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                  <TextField fx:id="txtColumna" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                  <Label prefWidth="121.0" text="Tipo" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                  <ComboBox fx:id="cmbTipo" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                    <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Item 1" />
+                                        <String fx:value="Item 2" />
+                                        <String fx:value="Item 3" />
+                                      </FXCollections>
+                                    </items>
+                                  </ComboBox>
+                                  <Label prefWidth="121.0" text="Insertado" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                  <TextField fx:id="txtInsertado" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                  <Label prefWidth="121.0" text="Clave única" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                  <TextField id="txtColumna" fx:id="txtClave" disable="true" editable="false" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                  <Label text="QR" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                  <TextField id="txtColumna" fx:id="txtQR" disable="true" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                  <TextField id="txtColumna" fx:id="txtPlaca" disable="true" editable="false" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                  <Label text="Placa" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                </children>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="201.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="10.0" prefWidth="30.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="147.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="219.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                            </children>
+                          </AnchorPane>
+                        </content>
+                        <VBox.margin>
+                          <Insets left="10.0" right="10.0" fx:id="x1" />
+                        </VBox.margin>
+                      </TitledPane>
+                      <TitledPane collapsible="false" prefHeight="233.0" prefWidth="802.0" text="Caracteristicas" VBox.margin="$x1">
+                        <content>
+                          <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="214.0" prefWidth="800.0">
+                            <children>
+                              <GridPane id="GridPane" prefHeight="207.0" prefWidth="799.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                                <children>
+                                  <Label text="Variedad" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                  <ComboBox fx:id="cmbVariedad" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                                    <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Item 1" />
+                                        <String fx:value="Item 2" />
+                                        <String fx:value="Item 3" />
+                                      </FXCollections>
+                                    </items>
+                                  </ComboBox>
+                                  <Label prefWidth="178.0" text="Producción (Kg)" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                                  <TextField fx:id="txtProduccion" prefWidth="181.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                                  <Label text="Mes plantación" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                  <ComboBox fx:id="cmbMesPlantacion" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Item 1" />
+                                        <String fx:value="Item 2" />
+                                        <String fx:value="Item 3" />
+                                      </FXCollections>
+                                    </items>
+                                  </ComboBox>
+                                  <Label text="Año producción" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                  <ComboBox fx:id="cmbAnioProduccion" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                    <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Item 1" />
+                                        <String fx:value="Item 2" />
+                                        <String fx:value="Item 3" />
+                                      </FXCollections>
+                                    </items>
+                                  </ComboBox>
+                                  <Label text="Año plantación" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                  <ComboBox fx:id="cmbAnioPlantacion" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Item 1" />
+                                        <String fx:value="Item 2" />
+                                        <String fx:value="Item 3" />
+                                      </FXCollections>
+                                    </items>
+                                  </ComboBox>
+                                  <Label text="Número estación" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                  <TextField fx:id="txtEstacion" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                  <Label text="Vivero" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                  <TextField fx:id="txtVivero" disable="true" prefWidth="181.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                  <Label text="Injertado fuerte" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                  <CheckBox fx:id="chkInjertado" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                  <Label text="Replantado" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                  <CheckBox fx:id="chkReplantado" mnemonicParsing="false" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                  <Label text="Notas" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                                  <TextArea fx:id="txtNotas" prefHeight="48.0" prefWidth="211.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                  <Label text="Estatus" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                  <ComboBox fx:id="cmbEstatus" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                    <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Item 1" />
+                                        <String fx:value="Item 2" />
+                                        <String fx:value="Item 3" />
+                                      </FXCollections>
+                                    </items>
+                                  </ComboBox>
+                                </children>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                            </children>
+                          </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <fx:include fx:id="ultimosDiagnosticos" source="ultimosDiagnosticos.fxml" minWidth="800.0" prefHeight="240.0" prefWidth="800.0" VBox.margin="$x1" />
+                    </children>
+                  </VBox>
+                </ScrollPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabRevision" text="Revisón nueva">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <VBox id="VBox" alignment="CENTER" minWidth="800.0" prefHeight="507.0" prefWidth="800.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <fx:include fx:id="revision" source="revision.fxml">
+                          <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </VBox.margin>
+                        </fx:include>
+                        <fx:include fx:id="diagnostico" source="diagnostico.fxml" prefHeight="210.0" prefWidth="802.0">
+                          <VBox.margin>
+                            <Insets left="5.0" right="5.0" />
+                          </VBox.margin>
+                        </fx:include>
+                      </children>
+                    </VBox>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </center>
+      <top>
+        <VBox prefHeight="88.0" prefWidth="800.0">
+          <children>
+            <fx:include fx:id="menu" source="menu.fxml" minHeight="48.0" minWidth="800.0" prefHeight="48.0" prefWidth="800.0" />
+            <AnchorPane prefHeight="40.0" prefWidth="800.0">
+              <children>
+                <GridPane prefHeight="26.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <Button mnemonicParsing="false" onAction="#guardar" text="Guardar" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Button mnemonicParsing="false" onAction="#regresarListaArboles" text="Regresar" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <padding>
+                    <Insets left="200.0" right="200.0" />
+                  </padding>
+                  <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@principal.css" />
+  </stylesheets>
+</AnchorPane>
